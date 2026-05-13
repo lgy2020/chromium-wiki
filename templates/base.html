@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🦀</span>
+        <span class="logo-text">Chromium Wiki</span>
+      </a>
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search-input" placeholder="搜索文档..." autocomplete="off">
+        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+      <div class="topbar-links">
+        <a href="/" class="topbar-link">首页</a>
+        <span class="topbar-link" id="module-links"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs">{{breadcrumbs}}</div>
+
+  <main class="content">
+    {{content}}
+  </main>
+
+  <footer class="footer">
+    <p>Chromium Wiki · WAWA鱼 🐟 搭建 · 基于 Chromium 源码分析</p>
+  </footer>
+
+  <script src="/public/js/app.js"></script>
+</body>
+</html>
